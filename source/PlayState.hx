@@ -6995,7 +6995,7 @@ class NotePool extends FlxTypedGroup<Note>
 {
 	override public function recycle(?ObjectClass:Class<Note>, ?ObjectFactory:Void->Note, Force:Bool = false, Revive:Bool = true):Note
 	{
-		var basic:FlxBasic = null;
+		var basic:Note = null;
 		basic = getFirstAvailable(ObjectClass, Force);
 
 		if (basic != null)
