@@ -6997,13 +6997,6 @@ class NotePool extends FlxTypedGroup<Note>
 	{
 		var basic:Note = null;
 		basic = getFirstAvailable(ObjectClass, Force);
-
-		if (basic != null)
-		{
-			if (Revive)
-				basic.revive();
-			return cast basic;
-		}
 	}
 
 	override public function getFirstAvailable(?ObjectClass:Class<Note>, Force:Bool = false):Note
